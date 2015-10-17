@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) IBOutlet UISwitch *lightSwitch;
+@property (strong, nonatomic) IBOutlet UITextField *temperatureTextField;
+@property (strong, nonatomic) IBOutlet UITextField *humidityTextField;
 @end
 
 @implementation ViewController
@@ -22,6 +24,12 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)lightAction:(id)sender {
+    if (self.lightSwitch.on) {
+        //HTTP
+    }
 }
 
 @end
